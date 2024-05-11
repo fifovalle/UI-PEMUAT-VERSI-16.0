@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0f0e17;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+}
+
+.tubuh {
+    --ukuran: 150px;
+    --kecepatan: 0.8s;
+    --warna: #ff8906;
+    position: relative;
+    display: inline-block;
+    height: var(--ukuran);
+    width: var(--ukuran);
+    animation: putaran calc(var(--kecepatan) * 2.5) infinite linear;
+}
+
+.dot {
+    position: absolute;
+    height: 100%;
+    width: 30%;
+}
+
+.dot:after {
+    content: '';
+    position: absolute;
+    height: 0%;
+    width: 100%;
+    padding-bottom: 100%;
+    background-color: var(--warna);
+    border-radius: 50%;
+}
+
+.dot:nth-child(1) {
+    bottom: 5%;
+    left: 0;
+    transform: rotate(60deg);
+    transform-origin: 50% 85%;
+}
+
+.dot:nth-child(1)::after {
+    bottom: 0;
+    left: 0;
+    animation: gelembung1 var(--kecepatan) infinite ease-in-out;
+    animation-delay: calc(var(--kecepatan) * -0.3);
+}
+
+.dot:nth-child(2) {
+    bottom: 5%;
+    right: 0;
+    transform: rotate(-60deg);
+    transform-origin: 50% 85%;
+}
+
+.dot:nth-child(2)::after {
+    bottom: 0;
+    left: 0;
+    animation: gelembung1 var(--kecepatan) infinite calc(var(--kecepatan) * -0.15) ease-in-out;
+}
+
+.dot:nth-child(3) {
+    bottom: -5%;
+    left: 0;
+    transform: translateX(116.666%);
+}
+
+.dot:nth-child(3)::after {
+    top: 0;
+    left: 0;
+    animation: gelembung2 var(--kecepatan) infinite ease-in-out;
+}
+
+@keyframes putaran {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes gelembung1 {
+
+    0%,
+    100% {
+        transform: translateY(0%) scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(-66%) scale(0.65);
+        opacity: 0.8;
+    }
+}
+
+@keyframes gelembung2 {
+
+    0%,
+    100% {
+        transform: translateY(0%) scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(66%) scale(0.65);
+        opacity: 0.8;
+    }
+}
