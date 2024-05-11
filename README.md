@@ -1,4 +1,4 @@
-**Selamat Datang di "UI Pemuat Versi 15.0" User Interface! 🚀**
+**Selamat Datang di "UI Pemuat Versi 16.0" User Interface! 🚀**
 
 Jelajahi karya terbaru dan keterampilan saya dalam dunia pengembangan perangkat lunak. Dari aplikasi web hingga proyek mobile, temukan ragam proyek yang mencerminkan dedikasi saya dalam teknologi.
 
@@ -9,7 +9,7 @@ Jelajahi karya terbaru dan keterampilan saya dalam dunia pengembangan perangkat 
 
 ### 🚀 Fitur Utama
 
-- **User Interface:** Pemuat Versi 15.0
+- **User Interface:** Pemuat Versi 16.0
 
 ## 🛠️ Teknologi yang Digunakan
 
@@ -20,7 +20,7 @@ Jelajahi karya terbaru dan keterampilan saya dalam dunia pengembangan perangkat 
 
 Berikut adalah beberapa tampilan halaman website :
 
-![Screenshot 2024-05-10 195133](https://github.com/fifovalle/UI-PEMUAT-VERSI-15.0/assets/90078068/d86f3af0-f7f5-4e1d-8a25-436d9ffb7f1b)
+![Screenshot 2024-05-10 201010](https://github.com/fifovalle/UI-PEMUAT-VERSI-16.0/assets/90078068/cd704d0c-945a-48e3-851e-12a7276ff217)
 
 ## 📬 Kontak
 
@@ -35,7 +35,7 @@ Kontribusi dan umpan balik dari komunitas sangat dihargai. Jika Anda ingin berko
 1. Clone repositori ini ke direktori web server Anda.
 
    ```
-   git clone https://github.com/fifovalle/UI-PEMUAT-VERSI-15.0.git
+   git clone https://github.com/fifovalle/UI-PEMUAT-VERSI-16.0.git
 
    ```
 
